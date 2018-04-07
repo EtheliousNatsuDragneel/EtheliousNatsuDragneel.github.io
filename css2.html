@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	body{background-color: #777777;}
+	#ad{
+		color:lightblue;
+		font:verdana;
+	}
+	#s{
+		color:lightblue;
+		font:verdana;
+
+	}
+	#m{
+		color:lightblue;
+		font:verdana;
+
+	}
+	#d{
+		color:lightblue;
+		font:verdana;
+
+	}
+	h1
+	{
+		font:verdana;
+		color:lightgreen;
+	
+	}
+	#ans{
+		font:verdana;
+		color:`green;
+		border:25px;
+		border-color: violet;
+	}
+	</style>
+	</head>
+<body>
+
+<center>
+<h1>CALCULATOR</h1><br>
+<input type="number" id="a"></input>
+<input type="number" id="b"></input><br><br><br>
+<button id="ad" onClick="add()">Click to add</button>
+<button id="s" onClick="sub()">Click to subtract</button>
+<button id="m" onClick="multiply()">Click to multiply</button>
+<button id="d" onClick="divide()">Click to divide</button>
+<br>
+<br>
+<div id="ans"></div>
+</center>
+
+<script>
+function add()
+{
+	var a=parseInt(document.getElementById("a").value);
+	var b=parseInt(document.getElementById("b").value);
+	document.getElementById("ans").innerHTML=a+b;
+}
+function sub()
+{
+	var a=parseInt(document.getElementById("a").value);
+	var b=parseInt(document.getElementById("b").value);
+	document.getElementById("ans").innerHTML=a-b;
+}
+function multiply()
+{
+	var a=parseInt(document.getElementById("a").value);
+	var b=parseInt(document.getElementById("b").value);
+	document.getElementById("ans").innerHTML=a*b;
+}
+function divide()
+{
+	var a=parseInt(document.getElementById("a").value);
+	var b=parseInt(document.getElementById("b").value);
+	document.getElementById("ans").innerHTML=a/b;
+}
+</script>
+
+</body>
+</html>
